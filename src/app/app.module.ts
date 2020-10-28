@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { FechaPipe } from './pipes/fecha.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NoimagePipe,
     TarjetasComponent,
     LoadingComponent,
+    FechaPipe,
   ],
   imports: [
     BrowserModule,
