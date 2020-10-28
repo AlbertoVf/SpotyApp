@@ -24,27 +24,34 @@
       </div>
     </div>
   </div>
-  <div class="mñ-5 flex-grow-1" id="tracks">
+  <div class="ml-5" id="tracks">
     <table class="table">
       <thead class="text-primary">
         <tr>
+          <th scope="col"></th>
           <th scope="col">Titulo</th>
           <th scope="col">Album</th>
           <th scope="col">Fecha de publicacion</th>
-          <th scope="col">Vista previa</th>
         </tr>
       </thead>
       <tbody class="text-light">
-        <tr *ngFor="let track of tracks" class="w-100">
+        <tr *ngFor="let track of tracks">
+          <td scope="row" class="mr-5 ml-5 mt-1 mb-1">
+            <iframe
+              [src]="track.uri | spotify"
+              width="300"
+              height="80"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </td>
           <td scope="row" class="mr-5 ml-5 mt-1 mb-1">{{ track.name }}</td>
           <td scope="row" class="mr-5 ml-5 mt-1 mb-1">
             {{ track.album.name }}
           </td>
           <td scope="row" class="mr-5 ml-5 mt-1 mb-1 text-center">
             {{ track.album.release_date | fecha }}
-          </td>
-          <td scope="row" class="mr-5 ml-5 mt-1 mb-1">
-            <audio [src]="track.preview_url" controls></audio>
           </td>
         </tr>
       </tbody>

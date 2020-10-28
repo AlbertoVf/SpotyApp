@@ -13,6 +13,7 @@ import { NoimagePipe } from './pipes/noimage.pipe';
 import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { FechaPipe } from './pipes/fecha.pipe';
+import { SpotifyPipe } from './pipes/spotify.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { FechaPipe } from './pipes/fecha.pipe';
     TarjetasComponent,
     LoadingComponent,
     FechaPipe,
+    SpotifyPipe,
   ],
   imports: [
     BrowserModule,
