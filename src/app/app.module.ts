@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.compone
     NavbarComponent,
     NoimagePipe,
     TarjetasComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@ export class SpotifyService {
   getQuery(query: string): Observable<any> {
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQCGeimE6efuS8x5PIBOv-HD7ZoSIXe_GNHN3CJbTtaUXynYNPgo9xUce3jINz-PSZCAoS-_YtrfTMe-OMo',
+        'Bearer BQB6yRWu2cPVamXdvukunW4BaSQ0nLyIsBgaS89Wz62V_dAWDHmtvjaHCvsiWGkSvtA27EKSMUMYK3zAlVg',
     });
     return this.http.get(`https://api.spotify.com/v1/${query}`, { headers });
   }
